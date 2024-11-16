@@ -36,8 +36,8 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           /// Location Picker
-          const LocationPicker(),
-          const SizedBox(height: 16),
+          /// const LocationPicker(),
+          /// const SizedBox(height: 16),
 
           /// category
           PetCategoryTabBar(

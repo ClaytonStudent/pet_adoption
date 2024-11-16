@@ -75,7 +75,7 @@ class PetDetailsInfoCard extends StatelessWidget {
           ),
 
           /// location
-          subtitle: const Row(
+          /*subtitle: const Row(
             children: [
               Icon(
                 Icons.location_on_outlined,
@@ -84,18 +84,18 @@ class PetDetailsInfoCard extends StatelessWidget {
               ),
               SizedBox(width: 4),
               Text(
-                'Bengaluru (3.2km)',
+                'Roma (3.2km)',
                 style: TextStyle(
                   color: kGreyTextColor,
                   fontSize: 12,
                 ),
               ),
             ],
-          ),
+          ),*/
 
           /// price
           trailing: const Text(
-            '₹3,000',
+            '€3,000',
             style: TextStyle(
               color: kPrimaryColor,
               fontSize: 24,

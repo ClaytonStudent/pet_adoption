@@ -65,8 +65,8 @@ class PetDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 32),
 
                   /// Owner Info Card
-                  const OwnerInfoCard(),
-                  const SizedBox(height: 8),
+                  /// const OwnerInfoCard(),
+                  /// const SizedBox(height: 8),
 
                   /// description
                   const Padding(
