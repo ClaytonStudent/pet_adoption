@@ -93,6 +93,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "CatAdoptionV1"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
