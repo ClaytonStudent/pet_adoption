@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_adoption/constants.dart';
 import 'package:pet_adoption/screens/home.dart';
+import 'package:pet_adoption/screens/brand.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Luka',
+      title: 'Welcome!',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         appBarTheme: const AppBarTheme(
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
+      initialRoute: '/', // Start at the Home page
+      routes: {
+        '/brand': (context) => const BrandPage(), // Define the /brand route
+      },
       home: const Home(),
     );
   }

@@ -26,6 +26,7 @@ class PetDetailsScreen extends StatelessWidget {
                 fit: BoxFit.fitHeight,
               ),
             ),
+            /*
             actions: [
               IconButton(
                 icon: const Icon(
@@ -34,7 +35,7 @@ class PetDetailsScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
               ),
-            ],
+            ],*/
           ),
 
           // pet details
