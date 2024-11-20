@@ -36,14 +36,14 @@ class CustomScaffold extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: const Text('Home'),
+              title: const Text('Cats Shop'),
               onTap: () {
                 Navigator.pushReplacementNamed(
                     context, '/'); // Use pushReplacementNamed to navigate
               },
             ),
             ListTile(
-              title: const Text('Brand'),
+              title: const Text('About Us'),
               onTap: () {
                 Navigator.pushReplacementNamed(
                     context, '/brand'); // Use pushReplacementNamed to navigate
