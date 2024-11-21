@@ -119,7 +119,7 @@ class PetDetailsScreen extends StatelessWidget {
     // Contact info
     const String telId = "0015773556477";
     const String wcId = "wxid_8nbkaxlksavc11";
-    const String xhsId = "xiaohongshu_id";
+    const String xhsId = "6215333448";
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
