@@ -117,7 +117,7 @@ class PetDetailsScreen extends StatelessWidget {
   /// Bottom sheet for contact information
   Widget _buildContactInfoSheet(BuildContext context) {
     // Contact info
-    const String telId = "123-456-7890";
+    const String telId = "0015773556477";
     const String wcId = "wxid_8nbkaxlksavc11";
     const String xhsId = "xiaohongshu_id";
 
