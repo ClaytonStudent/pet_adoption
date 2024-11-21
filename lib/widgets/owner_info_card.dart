@@ -24,7 +24,8 @@ class OwnerInfoCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(30),
               border: Border.all(color: kPrimaryColor, width: 2),
               image: const DecorationImage(
-                image: NetworkImage(kDummyProfilePicUrl),
+                image:
+                    AssetImage(profilePic), //NetworkImage(kDummyProfilePicUrl),
                 fit: BoxFit.cover,
               ),
             ),

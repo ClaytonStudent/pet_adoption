@@ -66,11 +66,11 @@ class PetDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 32),
 
                   /// description
-                  const Padding(
-                    padding: EdgeInsets.all(16.0),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Text(
-                      kDummyDescription,
-                      style: TextStyle(
+                      pet.description, //kDummyDescription,
+                      style: const TextStyle(
                         color: kGreyTextColor,
                       ),
                     ),

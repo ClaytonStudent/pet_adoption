@@ -11,12 +11,13 @@ class CustomScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome'),
+        title: const Text('Jerry Weng Gattery'),
         actions: const [
           Padding(
             padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
-              backgroundImage: NetworkImage(kDummyProfilePicUrl),
+              backgroundImage:
+                  AssetImage(profilePic), //NetworkImage(kDummyProfilePicUrl)
             ),
           ),
         ],
@@ -30,7 +31,8 @@ class CustomScaffold extends StatelessWidget {
               ),
               child: Center(
                 child: CircleAvatar(
-                  backgroundImage: NetworkImage(kDummyProfilePicUrl),
+                  backgroundImage: AssetImage(
+                      profilePic), //NetworkImage(kDummyProfilePicUrl),
                   radius: 40,
                 ),
               ),

@@ -86,7 +86,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "Welcome to our pet adoption center.",
+                  "Welcome to our Jerry Weng Gattery.",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -104,7 +104,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "We are located in the heart of the city",
+                  "We are located in the heart of the Roma",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -155,13 +155,13 @@ class _BrandPageState extends State<BrandPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Text(
+                /*const Text(
                   "- Phone: 123-456-7890",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
                   ),
-                ),
+                ),*/
                 const SizedBox(height: 8),
                 const Text(
                   "- WeChat: pet_adoption_123",
@@ -172,7 +172,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- Xiaohongshu: pet_adopt_xhs",
+                  "- Xiaohongshu: 6215333448",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -180,7 +180,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- Email: contact@petadopt.com",
+                  "- Email: 254573166@qq.com",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,

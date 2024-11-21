@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
           /// pet list
           const Expanded(
             child: PetGridList(
-              pets: [...PetData.cats, ...PetData.cats],
+              pets: [...PetData.cats], // , ...PetData.cats
             ),
           ),
         ],

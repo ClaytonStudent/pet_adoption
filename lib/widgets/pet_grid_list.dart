@@ -137,6 +137,7 @@ class PetData {
   final String breed;
   final String age;
   final bool isGenderMale;
+  final String description;
 
   const PetData({
     required this.name,
@@ -144,6 +145,7 @@ class PetData {
     required this.breed,
     required this.age,
     required this.isGenderMale,
+    required this.description,
   });
 
   static const cats = [
@@ -153,6 +155,8 @@ class PetData {
       isGenderMale: false,
       age: '2 months',
       imageUrl: 'assets/images/cat1.png',
+      description:
+          "A playful Burmilla kitten who loves to cuddle and explore. She's perfect for a loving family.",
     ),
     PetData(
       name: 'Oliver',
@@ -160,6 +164,8 @@ class PetData {
       isGenderMale: true,
       age: '1 year',
       imageUrl: 'assets/images/cat2.png',
+      description:
+          "A friendly Australian Mist with a calm demeanor. He enjoys both playtime and quiet naps.",
     ),
     PetData(
       name: 'Jerry',
@@ -167,6 +173,8 @@ class PetData {
       isGenderMale: false,
       age: '2 year',
       imageUrl: 'assets/images/cat3.png',
+      description:
+          "A curious Scottish Fold who loves attention. She’s great with children and other pets.",
     ),
     PetData(
       name: 'Milo',
@@ -174,6 +182,8 @@ class PetData {
       isGenderMale: false,
       age: '1 months',
       imageUrl: 'assets/images/cat4.png',
+      description:
+          "A sweet American Curl kitten full of energy. She’s ready to bring joy to her forever home.",
     ),
   ];
 }
