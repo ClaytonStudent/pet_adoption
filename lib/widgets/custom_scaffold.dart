@@ -16,7 +16,7 @@ class CustomScaffold extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
-              backgroundImage: AssetImage(profilePic),
+              backgroundImage: AssetImage(profilePicUrl),
             ),
           ),
         ],
@@ -30,7 +30,7 @@ class CustomScaffold extends StatelessWidget {
               ),
               child: Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage(profilePic),
+                  backgroundImage: AssetImage(profilePicUrl),
                   radius: 40,
                 ),
               ),

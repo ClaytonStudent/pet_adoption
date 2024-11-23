@@ -16,4 +16,4 @@ const kLinearGradient = LinearGradient(
   end: Alignment.bottomRight,
 );
 
-const profilePic = 'assets/images/logo.png';
+const profilePicUrl = 'assets/images/logo.png';
