@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cat_adoption/constants.dart';
 import 'package:cat_adoption/screens/home.dart';
-import 'package:cat_adoption/screens/brand.dart';
+import 'package:cat_adoption/screens/about_us.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/', // Start at the Home page
       routes: {
-        '/brand': (context) => const BrandPage(), // Define the /brand route
+        '/brand': (context) => const AboutUsPage(), // Define the /brand route
       },
       home: const Home(),
     );

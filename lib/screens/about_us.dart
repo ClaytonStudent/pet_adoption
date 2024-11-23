@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:cat_adoption/widgets/custom_scaffold.dart'; // Import the CustomScaffold widget
 import 'package:carousel_slider/carousel_slider.dart';
 
-class BrandPage extends StatefulWidget {
-  const BrandPage({super.key});
+class AboutUsPage extends StatefulWidget {
+  const AboutUsPage({super.key});
 
   @override
-  State<BrandPage> createState() => _BrandPageState();
+  State<AboutUsPage> createState() => _AboutUsPageState();
 }
 
 final List<String> bannerImages = [
@@ -16,7 +16,7 @@ final List<String> bannerImages = [
 ];
 int activeIndex = 0;
 
-class _BrandPageState extends State<BrandPage> {
+class _AboutUsPageState extends State<AboutUsPage> {
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
