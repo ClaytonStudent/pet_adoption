@@ -17,5 +17,3 @@ const kLinearGradient = LinearGradient(
 );
 
 const profilePic = 'assets/images/logo.png';
-const kDummyDescription =
-    "Cras sit amet interdum turpis. In nec pulvinar mauris. Curabitur erat tortor, posuere sodales ante sed, accumsan ullamcorper nisi. Cras consequat nisl magna, nec maximus nisi semper mattis.";

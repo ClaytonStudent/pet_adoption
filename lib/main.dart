@@ -31,7 +31,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/', // Start at the Home page
       routes: {
-        '/brand': (context) => const AboutUsPage(), // Define the /brand route
+        '/about_us': (context) =>
+            const AboutUsPage(), // Define the /brand route
       },
       home: const Home(),
     );

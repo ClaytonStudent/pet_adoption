@@ -45,8 +45,8 @@ class CustomScaffold extends StatelessWidget {
             ListTile(
               title: const Text('About Us'),
               onTap: () {
-                Navigator.pushReplacementNamed(
-                    context, '/brand'); // Use pushReplacementNamed to navigate
+                Navigator.pushReplacementNamed(context,
+                    '/about_us'); // Use pushReplacementNamed to navigate
               },
             ),
           ],
