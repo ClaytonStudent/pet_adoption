@@ -1,3 +1,4 @@
+import 'package:cat_adoption/screens/onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cat_adoption/constants.dart';
 import 'package:cat_adoption/screens/home.dart';
@@ -33,8 +34,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/about_us': (context) =>
             const AboutUsPage(), // Define the /brand route
+        '/home': (context) => const Home(), // Define the / route
       },
-      home: const Home(),
+      home: const OnBoardingPage(),
     );
   }
 }

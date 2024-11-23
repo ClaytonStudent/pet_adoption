@@ -45,7 +45,7 @@ class CatGridTile extends StatelessWidget {
         padding: const EdgeInsets.all(12),
         margin: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Colors.red,
+          color: Colors.white,
           gradient: const LinearGradient(
             colors: [
               Colors.black12,

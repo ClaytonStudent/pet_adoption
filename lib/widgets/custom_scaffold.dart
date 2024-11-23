@@ -39,7 +39,7 @@ class CustomScaffold extends StatelessWidget {
               title: const Text('Cats Shop'),
               onTap: () {
                 Navigator.pushReplacementNamed(
-                    context, '/'); // Use pushReplacementNamed to navigate
+                    context, '/home'); // Use pushReplacementNamed to navigate
               },
             ),
             ListTile(
