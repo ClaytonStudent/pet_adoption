@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_adoption/constants.dart';
+import 'package:cat_adoption/constants.dart';
 
 class CustomScaffold extends StatelessWidget {
   final Widget
@@ -16,8 +16,7 @@ class CustomScaffold extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(8.0),
             child: CircleAvatar(
-              backgroundImage:
-                  AssetImage(profilePic), //NetworkImage(kDummyProfilePicUrl)
+              backgroundImage: AssetImage(profilePic),
             ),
           ),
         ],
@@ -31,8 +30,7 @@ class CustomScaffold extends StatelessWidget {
               ),
               child: Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage(
-                      profilePic), //NetworkImage(kDummyProfilePicUrl),
+                  backgroundImage: AssetImage(profilePic),
                   radius: 40,
                 ),
               ),

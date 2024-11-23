@@ -1,6 +1,6 @@
 {
-    "name": "pet_adoption",
-    "short_name": "pet_adoption",
+    "name": "cat_adoption",
+    "short_name": "cat_adoption",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

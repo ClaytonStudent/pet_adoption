@@ -1,35 +1,34 @@
 import 'package:flutter/material.dart';
+import '../screens/cat_details.dart';
 
-import '../screens/pet_details.dart';
+/// cat Grid List
+class CatGridList extends StatelessWidget {
+  final List<CatData> cats;
 
-/// Pet Grid List
-class PetGridList extends StatelessWidget {
-  final List<PetData> pets;
-
-  const PetGridList({super.key, required this.pets});
+  const CatGridList({super.key, required this.cats});
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: pets.length,
+      itemCount: cats.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         childAspectRatio: 185 / 250,
       ),
       itemBuilder: (context, index) {
-        return PetGridTile(
-          pet: pets[index],
+        return CatGridTile(
+          cat: cats[index],
         );
       },
     );
   }
 }
 
-/// Pet Grid Tile
-class PetGridTile extends StatelessWidget {
-  final PetData pet;
+/// cat Grid Tile
+class CatGridTile extends StatelessWidget {
+  final CatData cat;
 
-  const PetGridTile({super.key, required this.pet});
+  const CatGridTile({super.key, required this.cat});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +37,7 @@ class PetGridTile extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => PetDetailsScreen(pet: pet),
+            builder: (context) => CatDetailsScreen(cat: cat),
           ),
         );
       },
@@ -57,7 +56,7 @@ class PetGridTile extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(14),
           image: DecorationImage(
-            image: AssetImage(pet.imageUrl),
+            image: AssetImage(cat.imageUrl),
             fit: BoxFit.contain,
           ),
         ),
@@ -67,7 +66,7 @@ class PetGridTile extends StatelessWidget {
           children: [
             // name
             Text(
-              pet.name,
+              cat.name,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 14,
@@ -77,7 +76,7 @@ class PetGridTile extends StatelessWidget {
 
             // breed
             Text(
-              pet.breed,
+              cat.breed,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 12,
@@ -91,13 +90,13 @@ class PetGridTile extends StatelessWidget {
               children: [
                 // gender icon
                 Icon(
-                  pet.isGenderMale ? Icons.male : Icons.female,
+                  cat.isGenderMale ? Icons.male : Icons.female,
                   size: 16,
                   color: Colors.white,
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  pet.isGenderMale ? 'Boy' : 'Girl',
+                  cat.isGenderMale ? 'Boy' : 'Girl',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -114,7 +113,7 @@ class PetGridTile extends StatelessWidget {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  pet.age,
+                  cat.age,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -130,8 +129,8 @@ class PetGridTile extends StatelessWidget {
   }
 }
 
-/// Pet Data Model
-class PetData {
+/// cat Data Model
+class CatData {
   final String name;
   final String imageUrl;
   final String breed;
@@ -139,7 +138,7 @@ class PetData {
   final bool isGenderMale;
   final String description;
 
-  const PetData({
+  const CatData({
     required this.name,
     required this.imageUrl,
     required this.breed,
@@ -149,7 +148,7 @@ class PetData {
   });
 
   static const cats = [
-    PetData(
+    CatData(
       name: 'Mia',
       breed: 'Burmilla',
       isGenderMale: false,
@@ -158,7 +157,7 @@ class PetData {
       description:
           "A playful Burmilla kitten who loves to cuddle and explore. She's perfect for a loving family.",
     ),
-    PetData(
+    CatData(
       name: 'Oliver',
       breed: 'Australian Mist',
       isGenderMale: true,
@@ -167,16 +166,16 @@ class PetData {
       description:
           "A friendly Australian Mist with a calm demeanor. He enjoys both playtime and quiet naps.",
     ),
-    PetData(
+    CatData(
       name: 'Jerry',
       breed: 'Scottish Fold',
       isGenderMale: false,
       age: '2 year',
       imageUrl: 'assets/images/cat3.png',
       description:
-          "A curious Scottish Fold who loves attention. She’s great with children and other pets.",
+          "A curious Scottish Fold who loves attention. She’s great with children and other cats.",
     ),
-    PetData(
+    CatData(
       name: 'Milo',
       breed: 'American Curl',
       isGenderMale: false,

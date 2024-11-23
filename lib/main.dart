@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pet_adoption/constants.dart';
-import 'package:pet_adoption/screens/home.dart';
-import 'package:pet_adoption/screens/brand.dart';
+import 'package:cat_adoption/constants.dart';
+import 'package:cat_adoption/screens/home.dart';
+import 'package:cat_adoption/screens/brand.dart';
 
 void main() {
   runApp(const MyApp());

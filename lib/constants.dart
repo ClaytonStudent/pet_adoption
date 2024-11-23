@@ -16,8 +16,6 @@ const kLinearGradient = LinearGradient(
   end: Alignment.bottomRight,
 );
 
-//const kDummyProfilePicUrl =
-//    'https://images.unsplash.com/photo-1599842057874-37393e9342df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 const profilePic = 'assets/images/logo.png';
 const kDummyDescription =
     "Cras sit amet interdum turpis. In nec pulvinar mauris. Curabitur erat tortor, posuere sodales ante sed, accumsan ullamcorper nisi. Cras consequat nisl magna, nec maximus nisi semper mattis.";

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // Import for Clipboard
 
 import '../constants.dart';
-import '../widgets/pet_deatils_info_card.dart';
-import '../widgets/pet_grid_list.dart';
+import '../widgets/cat_deatils_info_card.dart';
+import '../widgets/cat_grid_list.dart';
 
-class PetDetailsScreen extends StatelessWidget {
-  final PetData pet;
+class CatDetailsScreen extends StatelessWidget {
+  final CatData cat;
 
-  const PetDetailsScreen({super.key, required this.pet});
+  const CatDetailsScreen({super.key, required this.cat});
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,13 @@ class PetDetailsScreen extends StatelessWidget {
       backgroundColor: kPinkishColor,
       body: CustomScrollView(
         slivers: [
-          // pet image
+          // cat image
           SliverAppBar(
             forceMaterialTransparency: true,
             expandedHeight: 400,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                pet.imageUrl,
+                cat.imageUrl,
                 fit: BoxFit.fitHeight,
               ),
             ),
@@ -38,7 +38,7 @@ class PetDetailsScreen extends StatelessWidget {
             ],*/
           ),
 
-          // pet details
+          // cat details
           SliverToBoxAdapter(
             child: Container(
               decoration: const BoxDecoration(
@@ -61,15 +61,15 @@ class PetDetailsScreen extends StatelessWidget {
                     ),
                   ),
 
-                  /// pet details info
-                  PetDetailsInfoCard(pet: pet),
+                  /// cat details info
+                  CatDetailsInfoCard(cat: cat),
                   const SizedBox(height: 32),
 
                   /// description
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
-                      pet.description, //kDummyDescription,
+                      cat.description, //kDummyDescription,
                       style: const TextStyle(
                         color: kGreyTextColor,
                       ),

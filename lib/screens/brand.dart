@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_adoption/widgets/custom_scaffold.dart'; // Import the CustomScaffold widget
+import 'package:cat_adoption/widgets/custom_scaffold.dart'; // Import the CustomScaffold widget
 import 'package:carousel_slider/carousel_slider.dart';
 
 class BrandPage extends StatefulWidget {
@@ -124,7 +124,7 @@ class _BrandPageState extends State<BrandPage> {
 
                 // List services one by one
                 const Text(
-                  "- Pet Adoption",
+                  "- cat Adoption",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -132,7 +132,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- Pet Care Advice",
+                  "- cat Care Advice",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -164,7 +164,7 @@ class _BrandPageState extends State<BrandPage> {
                 ),*/
                 const SizedBox(height: 8),
                 const Text(
-                  "- WeChat: pet_adoption_123",
+                  "- WeChat: wxid_8nbkaxlksavc11",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,

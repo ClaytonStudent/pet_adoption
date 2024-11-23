@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_adoption/widgets/pet_grid_list.dart';
+import 'package:cat_adoption/widgets/cat_grid_list.dart';
 
 import '../constants.dart';
 
@@ -54,20 +54,20 @@ class CustomInfographic extends StatelessWidget {
   }
 }
 
-class PetDetailsInfoCard extends StatelessWidget {
-  final PetData pet;
+class CatDetailsInfoCard extends StatelessWidget {
+  final CatData cat;
 
-  const PetDetailsInfoCard({super.key, required this.pet});
+  const CatDetailsInfoCard({super.key, required this.cat});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        /// Pet basic info
+        /// cat basic info
         ListTile(
           /// name
-          title: Text(pet.name),
+          title: Text(cat.name),
           titleTextStyle: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w500,
@@ -103,7 +103,7 @@ class PetDetailsInfoCard extends StatelessWidget {
           ),
         ),
 
-        /// Pet more details
+        /// cat more details
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 16),
           padding: const EdgeInsets.all(16),
