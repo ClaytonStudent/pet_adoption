@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             const AboutUsPage(), // Define the /brand route
         '/home': (context) => const Home(), // Define the / route
       },
-      home: const OnBoardingPage(),
+      home: const Home(),
     );
   }
 }

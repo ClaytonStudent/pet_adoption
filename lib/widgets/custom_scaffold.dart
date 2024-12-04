@@ -54,6 +54,36 @@ class CustomScaffold extends StatelessWidget {
       ),
       body:
           body, // Pass the body (content) to be displayed in the body of the Scaffold
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (value) => {
+          if (value == 0)
+            {
+              Navigator.pushReplacementNamed(context, '/home'),
+            }
+          else if (value == 1)
+            {
+              Navigator.pushReplacementNamed(context, '/about_us'),
+            }
+          else if (value == 2)
+            {
+              Navigator.pushReplacementNamed(context, '/about_us'),
+            }
+        },
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.pets),
+            label: 'Pets',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
+      ),
     );
   }
 }
