@@ -137,20 +137,22 @@ class CatData {
   final String age;
   final bool isGenderMale;
   final String description;
+  final String category;
 
-  const CatData({
-    required this.name,
-    required this.imageUrl,
-    required this.breed,
-    required this.age,
-    required this.isGenderMale,
-    required this.description,
-  });
+  const CatData(
+      {required this.name,
+      required this.imageUrl,
+      required this.breed,
+      required this.age,
+      required this.isGenderMale,
+      required this.description,
+      required this.category});
 
   static const cats = [
     CatData(
       name: 'Mia',
       breed: 'Burmilla',
+      category: '待出售',
       isGenderMale: false,
       age: '2 months',
       imageUrl: 'assets/images/cat1.png',
@@ -160,6 +162,7 @@ class CatData {
     CatData(
       name: 'Oliver',
       breed: 'Australian Mist',
+      category: '待出售',
       isGenderMale: true,
       age: '1 year',
       imageUrl: 'assets/images/cat2.png',
@@ -169,6 +172,7 @@ class CatData {
     CatData(
       name: 'Jerry',
       breed: 'Scottish Fold',
+      category: '种猫',
       isGenderMale: false,
       age: '2 year',
       imageUrl: 'assets/images/cat3.png',
@@ -178,6 +182,7 @@ class CatData {
     CatData(
       name: 'Milo',
       breed: 'American Curl',
+      category: '已出售',
       isGenderMale: false,
       age: '1 months',
       imageUrl: 'assets/images/cat4.png',
