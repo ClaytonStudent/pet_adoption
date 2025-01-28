@@ -161,7 +161,7 @@ class CatData {
     CatData(
       name: '咪宝',
       breed: '田园',
-      category: '待出售',
+      category: '在售',
       isGenderMale: false,
       isNeutered: false,
       birthDate: "2021-10-01",
@@ -175,7 +175,7 @@ class CatData {
     CatData(
       name: '雪球',
       breed: '英短',
-      category: '待出售',
+      category: '在售',
       isGenderMale: true,
       isNeutered: true,
       birthDate: "2020-10-01",
@@ -203,7 +203,7 @@ class CatData {
     CatData(
       name: '奶泡',
       breed: '布偶',
-      category: '已出售',
+      category: '已售',
       isGenderMale: false,
       isNeutered: true,
       birthDate: "2020-10-01",

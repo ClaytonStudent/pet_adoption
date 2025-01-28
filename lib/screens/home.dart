@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String selectedCategory = '待出售';
+  String selectedCategory = '在售';
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
@@ -18,17 +18,40 @@ class _HomeState extends State<Home> {
         children: [
           // Banner
           Container(
-            height: 200, // Altezza del banner
-            color: Colors.orange, // Sfondo temporaneo
-            child: const Center(
-              child: Text(
-                'Banner Temporaneo',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+            height: 200,
+            child: Stack(
+              children: [
+                // Background Image
+                Container(
+                  width: double.infinity,
+                  child: Image.asset(
+                    'assets/images/catBanner.png', // Make sure to add this image to your assets
+                    fit: BoxFit.cover,
+                  ),
                 ),
-              ),
+                // Darkened Overlay (optional - helps text visibility)
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                ),
+                // Text
+                const Center(
+                  child: Text(
+                    ' ',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 3.0,
+                          color: Colors.black45,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           const SizedBox(
@@ -40,44 +63,44 @@ class _HomeState extends State<Home> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Bottone "待出售"
+                // Bottone "在售"
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        selectedCategory = '待出售';
+                        selectedCategory = '在售';
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: selectedCategory == '待出售'
+                      backgroundColor: selectedCategory == '在售'
                           ? Colors.orange
                           : Colors.grey,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('待出售'),
+                    child: const Text('在售'),
                   ),
                 ),
                 const SizedBox(width: 8), // Spazio tra i bottoni
 
-                // Bottone "已出售"
+                // Bottone "已售"
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        selectedCategory = '已出售';
+                        selectedCategory = '已售';
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: selectedCategory == '已出售'
+                      backgroundColor: selectedCategory == '已售'
                           ? Colors.orange
                           : Colors.grey,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('已出售'),
+                    child: const Text('已售'),
                   ),
                 ),
                 const SizedBox(width: 8), // Spazio tra i bottoni

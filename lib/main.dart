@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cat_adoption/constants.dart';
 import 'package:cat_adoption/screens/home.dart';
 import 'package:cat_adoption/screens/about_us.dart';
+import 'package:cat_adoption/screens/cat_food.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/about_us': (context) =>
             const AboutUsPage(), // Define the /brand route
         '/home': (context) => const Home(), // Define the / route
+        '/cat_food': (context) => const CatFood(), // Define the / route
       },
       home: const Home(),
     );

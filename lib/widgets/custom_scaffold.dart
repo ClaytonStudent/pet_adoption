@@ -36,14 +36,21 @@ class CustomScaffold extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: const Text('Cats Shop'),
+              title: const Text('猫咪'),
               onTap: () {
                 Navigator.pushReplacementNamed(
                     context, '/home'); // Use pushReplacementNamed to navigate
               },
             ),
             ListTile(
-              title: const Text('About Us'),
+              title: const Text('猫粮'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context,
+                    '/cat_food'); // Use pushReplacementNamed to navigate
+              },
+            ),
+            ListTile(
+              title: const Text('猫舍'),
               onTap: () {
                 Navigator.pushReplacementNamed(context,
                     '/about_us'); // Use pushReplacementNamed to navigate
@@ -62,7 +69,7 @@ class CustomScaffold extends StatelessWidget {
             }
           else if (value == 1)
             {
-              Navigator.pushReplacementNamed(context, '/home'),
+              Navigator.pushReplacementNamed(context, '/cat_food'),
             }
           else if (value == 2)
             {
@@ -71,16 +78,16 @@ class CustomScaffold extends StatelessWidget {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(Icons.pets),
+            label: '猫咪',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.pets),
-            label: 'Pets',
+            icon: Icon(Icons.food_bank),
+            label: '猫粮',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.contact_page_outlined),
-            label: 'About',
+            label: '猫舍',
           ),
         ],
       ),

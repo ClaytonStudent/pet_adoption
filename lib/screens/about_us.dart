@@ -78,7 +78,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
               children: [
                 // Shop Introduction
                 const Text(
-                  "About Us",
+                  "关于我们",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -86,7 +86,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "Welcome to our Jerry Weng Gattery.",
+                  "Terry Weng Gattery",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -94,17 +94,8 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),
                 const SizedBox(height: 16),
 
-                // Location Information
                 const Text(
-                  "Location",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  "We are located in the heart of the Roma",
+                  "位于罗马的金渐层长短毛猫舍",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -114,7 +105,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
 
                 // Service Description
                 const Text(
-                  "Our Services",
+                  "主繁育",
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -124,7 +115,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
 
                 // List services one by one
                 const Text(
-                  "- cat Adoption",
+                  "- 黑金",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -132,7 +123,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- cat Care Advice",
+                  "- 金点",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -140,7 +131,15 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- Post-Adoption Support",
+                  "- 蓝金",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black54,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  "- 紫金(长短毛)",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -149,7 +148,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
 
                 const SizedBox(height: 8),
                 const Text(
-                  "Contact Us",
+                  "联系方式",
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -164,7 +163,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),*/
                 const SizedBox(height: 8),
                 const Text(
-                  "- WeChat: wxid_8nbkaxlksavc11",
+                  "- 微信: wxid_8nbkaxlksavc11",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
@@ -172,7 +171,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  "- Xiaohongshu: 6215333448",
+                  "- 小红书: 6215333448",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
