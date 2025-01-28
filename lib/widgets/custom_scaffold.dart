@@ -62,7 +62,7 @@ class CustomScaffold extends StatelessWidget {
             }
           else if (value == 1)
             {
-              Navigator.pushReplacementNamed(context, '/about_us'),
+              Navigator.pushReplacementNamed(context, '/home'),
             }
           else if (value == 2)
             {
@@ -79,8 +79,8 @@ class CustomScaffold extends StatelessWidget {
             label: 'Pets',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.contact_page_outlined),
+            label: 'About',
           ),
         ],
       ),

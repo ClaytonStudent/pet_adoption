@@ -1,4 +1,3 @@
-import 'package:cat_adoption/screens/onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cat_adoption/constants.dart';
 import 'package:cat_adoption/screens/home.dart';

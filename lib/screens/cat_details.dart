@@ -66,6 +66,7 @@ class CatDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 32),
 
                   /// description
+                  /*
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
@@ -74,7 +75,7 @@ class CatDetailsScreen extends StatelessWidget {
                         color: kGreyTextColor,
                       ),
                     ),
-                  ),
+                  ),*/
                 ],
               ),
             ),

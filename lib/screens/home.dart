@@ -110,8 +110,7 @@ class _HomeState extends State<Home> {
             child: CatGridList(
               cats: [
                 ...CatData.cats.where((cat) => cat.category == selectedCategory)
-              ], // , ...PetData.cats
-              // CatData.cats.where((cat) => cat.category == '待出售').toList();
+              ],
             ),
           ),
         ],
